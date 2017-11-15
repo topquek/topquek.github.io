@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+.dropin {
+    background-color:#0000e6;
+    color: Orange;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: Black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #black}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropin {
+    background-color: #0000e6;
+}
+</style>
+</head>
+<body>
+
+<h2>Best Characters in Smash Bros.</h2>
+<p></p>
+
+<div class="dropdown">
+  <button class="dropin">Smash 64</button>
+  <div class="dropdown-content">
+    <a href="#">Pikachu</a>
+    <a href="#">Kirby</a>
+    <a href="#">Yoshi</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropin">Melee</button>
+  <div class="dropdown-content">
+    <a href="#">Fox</a>
+    <a href="#">Falco</a>
+    <a href="#">Sheik</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropin">Brawl</button>
+  <div class="dropdown-content">
+    <a href="#">Meta Knight</a>
+    <a href="#">Ice Climbers</a>
+    <a href="#">Snake</a>
+  </div>
+</div>
+
+</body>
+</html>
